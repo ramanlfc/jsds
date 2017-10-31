@@ -1,7 +1,6 @@
-describe('test cases for bubble sort', () => {
+describe('test cases for selection sort', () => {
 
     it('should sort given array of positive values', () => {
-
         let arr = [];
 
         for (let i = 0; i < 10; i++) {
@@ -9,7 +8,7 @@ describe('test cases for bubble sort', () => {
             arr.push(temp);
         }
 
-        bubbleSort(arr);
+        selectionSort(arr);
 
         let min = Math.min(...arr);
         let max = Math.max(...arr);
@@ -28,8 +27,8 @@ describe('test cases for bubble sort', () => {
             arr.push(-temp);
         }
 
-        bubbleSort(arr);
-        
+        selectionSort(arr);
+
         let min = Math.min(...arr);
         let max = Math.max(...arr);
 
@@ -37,5 +36,6 @@ describe('test cases for bubble sort', () => {
         expect(arr[arr.length - 1]).toBe(max);
 
     });
+
 
 });
