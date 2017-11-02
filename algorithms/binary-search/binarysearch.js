@@ -5,7 +5,7 @@ function binarySearch(arr, key) {
 
     while (start <= end) {
 
-        let mid = parseInt((start + end) / 2);// create a midpoint
+        let mid = parseInt(start + end/ 2);// create a midpoint
 
         if (arr[mid] === key) {// key found
             return mid;
