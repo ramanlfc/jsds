@@ -38,10 +38,14 @@ class Stack {
         return temp;
     }
 
-    clear(){
-        this.data= [];
+    clear() {
+        this.data = [];
         this.top = -1;
         this.count = 0;
+    }
+
+    increaseCapacity(newSize) {
+        this.size = newSize + this.size;
     }
 
     peek() {

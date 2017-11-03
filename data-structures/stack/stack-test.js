@@ -56,4 +56,23 @@ describe('Stack test cases', () => {
 
     });
     
+    it('should increase stack capacity',()=>{
+
+        let s = new Stack();
+        
+                for (let i = 0; i < 10; i++)
+                    s.push(i);
+
+         expect(()=>{
+            s.push(50);
+         }).toThrowError(Error);           
+
+         s.increaseCapacity(20);
+
+         s.push(50);
+
+         expect(s.count).toBe(11);
+
+    });
+
 });
