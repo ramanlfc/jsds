@@ -2,14 +2,16 @@ class Queue {
 
     constructor(size) {
 
-        if (size === undefined)
-            this.size = 10;
+        if(size === undefined)
+        this.size = 10;
+        else
+        this.size = size;
 
         this.data = [];
         this.count = 0;
         this.rear = -1;
         this.front = -1;
-        this.size = size;
+    
     }
 
     isEmpty() {

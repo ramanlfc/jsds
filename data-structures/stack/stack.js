@@ -3,10 +3,11 @@ class Stack {
     constructor(size) {
 
         if (size === undefined)
-            size = 10;
+            this.size = 10;
+        else
+            this.size = size;
 
         this.data = [];
-        this.size = size;
         this.top = -1;
         this.count = 0;
     }

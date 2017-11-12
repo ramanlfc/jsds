@@ -12,8 +12,10 @@ class DoublyLinkedList {
 
     constructor(size) {
 
-        if (size === undefined)
-            this.size = 10;
+        if(size === undefined)
+        this.size = 10;
+        else
+        this.size = size;
 
         this.head = null;
         this.tail = null;

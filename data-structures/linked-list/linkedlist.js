@@ -9,7 +9,13 @@ class Node {
 
 class LinkedList {
 
-    constructor() {
+    constructor(size) {
+
+        if(size === undefined)
+        this.size = 10;
+        else
+        this.size = size;
+
         this.head = null;
         this.tail = null;
         this.count = 0;
