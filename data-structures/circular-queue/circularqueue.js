@@ -42,7 +42,7 @@ class CircularQueue {
             throw new Error('Queue is empty');
 
         if (this.count === 1)
-            this.tail--;
+            this.tail= -1;
 
         if (this.head === this.size)
             this.head = -1;

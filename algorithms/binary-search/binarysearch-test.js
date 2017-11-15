@@ -1,6 +1,6 @@
 describe('binary search test', () => {
 
-    let arr = [10, 15, 2, 36, 19, 6, 41, 9];
+    let arr = [2, 5, 9, 36, 40, 52, 63, 79];
 
     it('should return index of matching element', () => {
 
@@ -15,7 +15,21 @@ describe('binary search test', () => {
         let idx = binarySearch(arr, 26);
 
         expect(idx).toBe(-1);
+    });
 
+
+    it('should return index of matching element recursively', () => {
+
+        let idx = binarySearchRecursive(arr, 36, 0, arr.length - 1);
+
+        expect(idx).toBe(3);
+    });
+
+    it('should return -1 for non-matching element recursively', () => {
+
+        let idx = binarySearchRecursive(arr, 25, 0, arr.length - 1);
+
+        expect(idx).toBe(-1);
     });
 
 });
